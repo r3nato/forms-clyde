@@ -1,0 +1,37 @@
+{
+  "name": "forms-clyde",
+  "workspaceFolder": "/course",
+  "dockerComposeFile": [ "../docker-compose.yml"
+  ],
+  "service": "dev",
+  "onCreateCommand": "git config --system --add safe.directory ${containerWorkspaceFolder}",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "dev.containers.gitCredentialHelperConfigLocation": "global",
+        "editor.formatOnSave": true,
+        "editor.rulers": [80, 88, 120],
+        "files.eol": "\n",
+        "[html]": {
+          "editor.formatOnSave": true
+        },
+        "[js]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[json]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        }
+      },
+      "extensions": [
+        "batisteo.vscode-django",
+        "bungcip.better-toml",
+        "esbenp.prettier-vscode",
+        "yzhang.markdown-all-in-one",
+	"ritwickdey.LiveServer",
+        // Utils:
+        "eamodio.gitlens",
+        "editorconfig.editorconfig"
+      ]
+    }
+  }
+}
